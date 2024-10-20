@@ -30,7 +30,7 @@ app.get("/data/:key", checkCache, (req, res) => {
   // Simulating data fetching (this could be from a database)
   const value = `Value for ${key}`;
 
-  // Cache the data
+  // Cache the data;
   cache[key] = value;
 
   res.send({ data: value, source: "database" });
